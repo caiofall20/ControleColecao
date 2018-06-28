@@ -54,4 +54,12 @@ public class Carrinho {
 	private String colecao;
 	@Column(nullable = false, length = 50)
 	private float escala;
+	@Column(nullable = false, length = 50)
+	private Integer ano;
+	public Integer getAno() {
+		return ano;
+	}
+	public void setAno(Integer ano) {
+		this.ano = ano;
+	}
 }
