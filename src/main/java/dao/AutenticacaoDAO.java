@@ -23,7 +23,7 @@ public class AutenticacaoDAO {
 		try {
 			manager.getTransaction().begin();
 			TypedQuery<Usuario> query = manager
-					.createQuery("select c from Cliente c where c.email = :email and c.senha = :senha ", Usuario.class);
+					.createQuery("select u from Usuario u where u.email = :email and u.senha = :senha ", Usuario.class);
 			query.setParameter("email", usuario.getEmail());
 			query.setParameter("senha", usuario.getSenha());
 			cli = query.getSingleResult();

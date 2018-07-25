@@ -18,6 +18,7 @@ public class ApplicationJAXRS extends Application {
         Set<Class<?>> set = new HashSet<Class<?>>();
         
         set.add(CarrinhoService.class);
+        set.add(AutenticacaoService.class);
         
    
         
